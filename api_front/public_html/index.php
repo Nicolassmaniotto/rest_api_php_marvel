@@ -28,10 +28,10 @@
 </div>
 <script>
      /// endereço do SERVIDOR
-    const server = "http://10.0.0.111";
+    const server = "http://10.0.0.111:4445";
 
      // endereço do retorno dos personagems
-    var conteudo = server+":4445/enviadados.php";
+    var conteudo = server+"/enviadados.php";
     
      //func (endereço da pagina ,nome do id do div a ser preenchido, função a ser chamada)
     json_fetch(conteudo,'conteudo',js_personagem_conteudo);
@@ -40,7 +40,7 @@
     function chamada_json_comics(id){ 
 
         // endereço a ser chamado
-        let url2 = `${server}:4445/connect_comic.php?id=${id}`; 
+        let url2 = `${server}/connect_comic.php?id=${id}`; 
 
         //func(endereço da pagina ,nome do id do div a ser preenchido, função a ser chamada)
         json_fetch(url2,`conteudo_${id}`,js_comics_conteudo); 
