@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel - REQ </title>
+    <link  rel="stylesheet"  href="css/index.css">
+    <link rel="stylesheet" href="css/css_person.css">
+
+    <script  src='js/json_ fetch.js'></script>
+
+    <script  src='js/json_personagems.js'></script>
+    <script  src='js/json_comics.js'></script>
+
+
+    <style id='style'>
+
+    </style>
+</head>
+
+<body>
+<div name='conteudo' id='conteudo'>
+
+</div>
+<script>
+    
+    var url = "http://localhost:4445/enviadados2.php";
+    
+    // conteudo(url,'conteudo');
+    json_fetch(url,'conteudo',js_personagem_conteudo);
+    
+    function chamada_json_comics(id){
+        let url2 = `http://localhost:4445/connect_comic.php?id=${id}`;
+        json_fetch(url2,`conteudo_${id}`,js_comics_conteudo);
+    };
+    
+    function f_hidden(pos){
+        bool = document.getElementById(pos).hidden;
+        document.getElementById(pos).hidden = !bool ;
+    }
+
+
+</script>
+</body>
+</html>
