@@ -1,5 +1,5 @@
 # rest_api_php_marvel
- rest api alimentado pela api marvel
+ Rest api alimentado pela api marvel.
  
 #Versão do PHP utilizada 8.0.3
 
