@@ -1,5 +1,12 @@
 # rest_api_php_marvel
  rest api alimentado pela api marvel
+ 
+#Versão do PHP utilizada 8.0.3
+
+<h1> Extensões Utilizadas</h1>
+<li>mysqli
+<li>curl
+
 
 
 Ir ate app_marvel_db/private/senha2.php 
