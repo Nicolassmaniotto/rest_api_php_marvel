@@ -8,7 +8,7 @@
 <li>curl
 
 
-
+<h1> Ações Nescessarias </h1>
 Ir ate app_marvel_db/private/senha2.php 
 e substituir com as suas chaves do marvel api
 
